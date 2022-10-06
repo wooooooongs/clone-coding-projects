@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>YouTube Mobile</title>
+  <script src="https://kit.fontawesome.com/2d323a629b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <i class="fab fa-youtube"></i>
+      <span class="title">YouTube</span>
+    </div>
+    <div class="icons">
+      <i class="fas fa-search"></i>
+      <i class="fas fa-ellipsis-v"></i>
+    </div>
+  </header>
+
+  <!-- Video Player -->
+  <section class="vidPlayer">
+    <video controls muted src="src/video.mp4"></video>
+  </section>
+
+  <!-- Video Info -->
+  <section class="info">
+    <!-- MetaData -->
+    <div class="meta">
+      <ul class="hashTags">
+        <li>#릴스</li>
+        <li>#스키스키스키</li>
+        <li>#틱톡데뷔</li>
+      </ul>
+      <div class="title_button">
+        <span class="title">
+          21년 전국민을 킹받게 만든 최고의 영상[윤태섭]
+        </span>
+        <button class="more">
+          <i class="fas fa-caret-down"></i>
+        </button>
+      </div>
+      <div class="views">
+        <span class="views">593,300 views 1 year ago </span>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <ul class="actionBtns">
+      <li>
+        <button><i class="fas fa-thumbs-up"></i><span>1K</span></button>
+      </li>
+      <li>
+        <button><i class="fas fa-thumbs-down"></i><span>1</span></button>
+      </li>
+      <li>
+        <button><i class="fas fa-share"></i><span>Share</span></button>
+      </li>
+      <li>
+        <button><i class="fas fa-plus"></i><span>Save</span></button>
+      </li>
+      <li>
+        <button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button>
+      </li>
+    </ul>
+
+    <!-- Channel Description -->
+    <div class="channel">
+      <div class="meta">
+        <img src="src/코딩중.png" alt="avatar" />
+        <div class="info">
+          <span class="name">
+
+          </span>
+          <span class="subscribers">
+
+          </span>
+        </div>
+      </div>
+      <button class="subscribe">
+        subscribe button
+      </button>
+    </div>
+
+  </section>
+  <!-- Next Videos -->
+  <section class="nextVid">
+    <span class="title">Up Next</span>
+    <ul>
+      <li class="item">
+        <img src="src/1.jpg" alt="">
+        <div class="info">
+          <span class="title">세상에서 가장 멋있는 제목1</span>
+          <span class="name">웅</span>
+          <span class="views">10K views</span>
+        </div>
+        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+      </li>
+      <li class="item">
+        <img src="src/2.jpg" alt="">
+        <div class="info">
+          <span class="title">세상에서 가장 멋있는 제목2</span>
+          <span class="name">웅</span>
+          <span class="views">12K views</span>
+        </div>
+        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+      </li>
+      <li class="item">
+        <img src="src/3.jpg" alt="">
+        <div class="info">
+          <span class="title">세상에서 가장 멋있는 제목3</span>
+          <span class="name">웅</span>
+          <span class="views">15K views</span>
+        </div>
+        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+      </li>
+    </ul>
+  </section>
+</body>
+</html>
