@@ -296,39 +296,55 @@ section > div {
   max: 1550px
 */
 
-.arrow_btn {
-  align-items: flex-start;
-
+.arrow_btn_wrappers {
   display: flex;
   position: absolute;
-  top: 0px;
+  top: 3px;
   z-index: 2;
+  height: 34px;
+  margin-top: calc((120vw) * 157 / 108 / 2 / 5 - 17px);
+  
+  /* 왜 있는지 모르겠다.
+  align-items: center;
+  justify-content: center;
+  -webkit-box-pack: center;
   -webkit-box-align: center;
-  height: 100%;
-  margin-top: calc((100vw - 170px) * 157 / 108 / 2 / 5 - 17px);
+  box-sizing: border-box; 
+  */
 }
 
 .arrow_prev_wrapper {
-  left: -9px;
+  left: 44px;
   
 }
 
 .arrow_next_wrapper {
-  right: 9px;
+  right: 36px;
   
 }
 
 .arrow_prev {
+  display: flex;
   width: 34px;
   height: 34px;
-
-  background: url("./src/left-arrow.png") 12px center / 12px no-repeat rgb(255, 255, 255);
+  background: url("./src/left-arrow.png") 10px center / 12px no-repeat rgb(255, 255, 255);
   box-sizing: border-box;
+
+  border: 1px solid rgb(249, 249, 249);
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 20%) 0px 0px 4px 0px;
 }
 
 .arrow_next {
+  display: flex;
   width: 34px;
   height: 34px;
-  background: url("./src/right-arrow.png") 12px center / 12px no-repeat rgb(255, 255, 255);
+  background: url("./src/right-arrow.png") 11.6px center / 12px no-repeat rgb(255,255,255);
   box-sizing: border-box;
+
+  border: 1px solid rgb(249, 249, 249);
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 20%) 0px 0px 4px 0px;
 }
