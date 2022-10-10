@@ -165,19 +165,16 @@ section > div {
   white-space: nowrap;
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-top: 0px !important;
-  margin-top: 0px !important;
-
+  
   overflow-x: hidden;
   overflow-y: hidden;
   position: relative;
-
+  
 }
 
 .itemsUl li {
   width: 19.8%;
   padding: 0px 6px !important;
-
 }
 
 .item {
