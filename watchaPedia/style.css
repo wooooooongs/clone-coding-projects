@@ -179,7 +179,6 @@ section > div {
 .itemsContainer {
   margin: 0 60px;
   min-width: 840px;
-  max-width: 1400px;
 }
 
 .itemsUl {
@@ -202,7 +201,7 @@ section > div {
   box-sizing: border-box;
   margin: 0 0 24px;
 
-  transition: ease-in-out 0.5s;
+  transition: ease 0.4s;
   cursor: pointer;
 }
 
