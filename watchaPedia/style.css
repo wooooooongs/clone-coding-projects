@@ -117,7 +117,7 @@ section {
 section > div {
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 0px);
+  /* min-height: calc(100vh - 0px); */
   position: relative;
 }
 
@@ -172,16 +172,16 @@ section > div {
   
 }
 
-.itemsUl li {
+.item {
   width: 19.8%;
   padding: 0px 6px !important;
-}
-
-.item {
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
   margin: 0 0 24px;
+
+  transition: ease-in-out 0.5s;
+  cursor: pointer;
 }
 
 .item a {
@@ -333,6 +333,7 @@ section > div {
   width: 34px;
   height: 34px;
   box-sizing: border-box;
+  font-size: 0px;
 
   border: 1px solid rgb(249, 249, 249);
   border-radius: 50%;
