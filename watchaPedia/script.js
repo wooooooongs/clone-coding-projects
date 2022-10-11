@@ -15,20 +15,16 @@
   });
 })()
 
-/*
 // 포스터 슬라이드 효과
-// [[1,2,3],[1,2],[1,2,3,4,5]]
-// 1을 찾고 그 다음 1을 찾아서 그 사이에만 주기?
-*/
+// 각 행마다 count를 따로 준다.
 let arrow_count = [0, 0, 0];
 
 function a(e) {
   const itemsUl = document.querySelectorAll(".itemsUl");
   
   itemsUl.forEach((ul, i) => {
-      // itemsUl > li의 배열
+      // 현재 클릭한 버튼의 ul과 일치한 ul에게만 효과 적용
       if (itemsUl[i] === e.target.parentElement.parentElement.children[0]){
-      console.log('yes');
         
       const itemsUl_children = itemsUl[i].children;
     
@@ -37,7 +33,7 @@ function a(e) {
         itemsUl_children[0].style.transform.slice(10).slice(0, -2)
       );
       
-      // next버튼 클릭 시
+      // 버튼 클릭
       if (e.target.innerText === "next") {
         if (arrow_count[i] < itemsUl_children.length / 5 - 1) {
           translateValue -= 509.65;
@@ -51,7 +47,7 @@ function a(e) {
         arrow_count[i]--;
       }
     
-      // 각 item마다 translate 적용하기
+      // 각 item마다 전부 translate 적용하기
       for (v of itemsUl_children) {
         v.style.transform = `translate(${translateValue}%)`;
         console.log(arrow_count);
