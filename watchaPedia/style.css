@@ -321,27 +321,23 @@ section > div {
 }
 
 .arrow_prev {
-  display: flex;
-  width: 34px;
-  height: 34px;
   background: url("./src/left-arrow.png") 10px center / 12px no-repeat rgb(255, 255, 255);
-  box-sizing: border-box;
-
-  border: 1px solid rgb(249, 249, 249);
-  border-radius: 50%;
-  background-color: rgb(255, 255, 255);
-  box-shadow: rgb(0 0 0 / 20%) 0px 0px 4px 0px;
 }
 
 .arrow_next {
+  background: url("./src/right-arrow.png") 11.6px center / 12px no-repeat rgb(255, 255, 255);
+}
+
+.arrow_btn {
   display: flex;
   width: 34px;
   height: 34px;
-  background: url("./src/right-arrow.png") 11.6px center / 12px no-repeat rgb(255,255,255);
   box-sizing: border-box;
 
   border: 1px solid rgb(249, 249, 249);
   border-radius: 50%;
   background-color: rgb(255, 255, 255);
   box-shadow: rgb(0 0 0 / 20%) 0px 0px 4px 0px;
+
+  cursor: pointer;
 }
