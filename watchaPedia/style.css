@@ -1,5 +1,6 @@
 :root {
   --description-text-color: #292a32;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 body {
@@ -46,16 +47,22 @@ header {
   display: flex;
 }
 
+#headerUl li{
+  cursor: pointer;
+}
+
 #logo {
   margin: 15px 15px 0 0;
 }
 
 .headerTexts {
   display: flex;
+  font-size: 15px;
   height: 62px;
   margin: 0 0 0 24px;
   flex-shrink: 0;
   align-items: center;
+  padding-top: 1.5px;
 }
 
 .searchBar {
@@ -78,13 +85,12 @@ header {
 }
 
 .searchInput {  
-  font-size: 14px;
+  font-size: 14.5px;
   font-weight: 400;
   letter-spacing: -0.3px;
   line-height: 23px;
   width: 100%;
-  padding: 0;
-  padding-bottom: 1px;
+  padding: 1px 0 1px 0;
   border: 0;
   border-color: 0;
   overflow: hidden;
@@ -106,7 +112,24 @@ header {
   border-radius: 2px;
 }
 
+.btnTv, .btnBook, .btnWebtoon, .login {
+  color: #7e7e7e;
+}
 
+#signUpBtn {
+  text-align: center;
+  font-weight: 500;
+  
+  border: 1px solid rgba(116, 116, 123, 0.5);
+  border-radius: 6px;
+
+  box-sizing: border-box;
+  width: auto;
+  min-width: 72px;
+  height: 32px;
+  padding: 7px 14px 6px 14px;
+  margin: 15px 0;
+}
 /* --------------------------Section */
 
 section {
@@ -141,8 +164,8 @@ section > div {
 .sCategories > p {
   color: #292a32;
   overflow: hidden;
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 23px;
+  font-weight: 800;
   letter-spacing: -0.4px;
 
   margin: 0px;
@@ -169,7 +192,6 @@ section > div {
   overflow-x: hidden;
   overflow-y: hidden;
   position: relative;
-  
 }
 
 .item {
